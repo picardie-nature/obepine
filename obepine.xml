@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application title="Obépine" 
+    mouseposition="false" 
+    logo="apps/obepine/img/obepine_title.svg" 
+    favicon="apps/obepine/img/favicon.png" 
+    help="mviewer_help.html" 
+    measuretools="true" 
+    exportpng="true" 
+    style="apps/obepine/css/theme.css" 
+    togglealllayersfromtheme="true"/>
+    <mapoptions 
+    maxzoom="19" projection="EPSG:3857" 
+    center="270969.26527094987, 6319507.75050523" 
+    zoom="12" 
+    projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+  
+    <baselayers style="gallery">
+        <baselayer  type="OSM" id="positron" label="Positron" title="Carto" thumbgallery="img/basemap/positron.png" 
+            url="http://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+            visible="true" attribution="Map tiles by  &lt;a href='https://carto.com/attributions' target='_blank'>Carto &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
+    </baselayers>     
+    <proxy url=""/>
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la BAN"/>
+    <searchparameters bbox="false" localities="true" features="false" />   
+
+    <themes>                  
+        <theme name="Faune sauvage du territoire"  collapsed="false" id="faune_sauvage" icon="fas fa-arrow-right">             
+        </theme> 
+        <theme name="Site à enjeux faunistiques"  collapsed="true" id="site_enjeux" icon="fas fa-arrow-right">
+        </theme>
+        <theme name="Eléments structurants du paysage"  collapsed="true" id="paysages" icon="fas fa-arrow-right">
+            <layer id="abc_boisements" name="Boisements"  visible="true" tiled="false"
+				searchable="false" queryable="true" fields="axe" aliases="axe"   
+				infoformat="text/html" featurecount="1"
+				sld="" 
+				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
+				legendurl="" 
+				attribution="Picardie Nature - Géo2France" 
+				metadata=""
+				metadata-csw="" >
+		    </layer>
+            <layer id="abc_haies" name="Linéaires boisés"  visible="true" tiled="false"
+				searchable="false" queryable="true" fields="axe" aliases="axe"   
+				infoformat="text/html" featurecount="1"
+				sld="" 
+				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
+				legendurl="" 
+				attribution="Picardie Nature - Géo2France" 
+				metadata=""
+				metadata-csw="" >
+		    </layer>
+            <layer id="abc_cours_eau" name="Cours d'eau"  visible="true" tiled="false"
+				searchable="false" queryable="true" fields="axe" aliases="axe"   
+				infoformat="text/html" featurecount="1"
+				sld="" 
+				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
+				legendurl="" 
+				attribution="Picardie Nature - Géo2France" 
+				metadata=""
+				metadata-csw="" >
+		    </layer>
+            <layer id="abc_etangs" name="Mares et étangs"  visible="true" tiled="false"
+				searchable="false" queryable="true" fields="axe" aliases="axe"   
+				infoformat="text/html" featurecount="1"
+				sld="" 
+				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
+				legendurl="" 
+				attribution="Picardie Nature - Géo2France" 
+				metadata=""
+				metadata-csw="" >
+		    </layer>
+            <layer id="abc_herbes" name="Milieux herbacés"  visible="true" tiled="false"
+				searchable="false" queryable="true" fields="axe" aliases="axe"   
+				infoformat="text/html" featurecount="1"
+				sld="" 
+				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
+				legendurl="" 
+				attribution="Picardie Nature - Géo2France" 
+				metadata=""
+				metadata-csw="" >
+		    </layer>
+            <layer id="abc_urbain" name="Espaces verts urbains"  visible="true" tiled="false"
+				searchable="false" queryable="true"   
+				infoformat="text/html" featurecount="1"
+				sld="" 
+				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
+				legendurl="" 
+				attribution="Picardie Nature - Géo2France" 
+				metadata=""
+				metadata-csw="" >
+		    </layer>
+        </theme>
+        <theme name="Ruptures de Trame Verte et Bleue"  collapsed="true" id="trame_verte_bleue" icon="fas fa-arrow-right">
+        </theme>
+
+    </themes>
+</config>
