@@ -1,4 +1,4 @@
-# Obepine - Observatoire de la biodiversité et des éléments paysagers d'interêt écologique
+# Obepine - Observatoire de la biodiversité et des éléments paysagers d'intérêt écologique
 
 Ce dépôt est dédié à l'application cartographique Obépine permettant à tout un chacun d'accéder de manière compréhensible et synthétique aux connaissances naturalistes locales. Cet outil est basé sur le [mviewer](https://github.com/mviewer/mviewer "mviewer"). 
 
