@@ -1,0 +1,16 @@
+#zoomAreaSelector {
+    color: #414243;
+    height: 34px;
+    padding: 5px 10px;
+    margin: 0.6rem;
+    border: none;
+    border-right: 7px white solid;
+    border-radius: 3px;
+    max-width: 250px;
+}
+
+.xs #zoomAreaSelector {
+    max-width: 100%!important;
+    margin: 10px 15px;
+    width: 92%;
+}

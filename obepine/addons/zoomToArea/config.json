@@ -1,0 +1,21 @@
+{
+    "js": ["zoomToArea.js"],
+    "css": "style.css",
+    "html":"zoomToArea.html",
+    "target": "page-content-wrapper",    
+    "options":
+    {
+      "mviewer":
+      {
+        "obepine":
+            {
+                "dataUrl": "apps/obepine/data/siteObepine_4326.geojson",
+                "dataEPSG": "EPSG:4326",
+                "fieldNameAreas": "nom_min",
+                "fieldIdAreas": "code",
+                "selectLabel":"Changer de territoire"
+            }
+      }
+    }
+  }
+  

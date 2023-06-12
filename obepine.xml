@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Obépine" 
+    <application id="obepine" title="Obépine" 
     mouseposition="false" 
     logo="apps/obepine/img/obepine_title.svg" 
     favicon="apps/obepine/img/favicon.png" 
-    help="mviewer_help.html" 
+    help="apps/obepine/obepineHome.html" 
+	showhelp="true"
     measuretools="true" 
     exportpng="true" 
     style="apps/obepine/css/theme.css" 
@@ -13,8 +14,7 @@
     maxzoom="19" projection="EPSG:3857" 
     center="270969.26527094987, 6319507.75050523" 
     zoom="12" 
-    projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
-  
+    projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />  
     <baselayers style="gallery">
         <baselayer  type="OSM" id="positron" label="Positron" title="Carto" thumbgallery="img/basemap/positron.png" 
             url="http://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
@@ -23,15 +23,17 @@
     <proxy url=""/>
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la BAN"/>
     <searchparameters bbox="false" localities="true" features="false" />   
-
+	<extensions>
+		<extension type="component" id="zoomToArea" path="apps/obepine/addons"/>
+	</extensions>
     <themes>                  
         <theme name="Faune sauvage du territoire"  collapsed="false" id="faune_sauvage" icon="fas fa-arrow-right">             
         </theme> 
         <theme name="Site à enjeux faunistiques"  collapsed="true" id="site_enjeux" icon="fas fa-arrow-right">
         </theme>
         <theme name="Eléments structurants du paysage"  collapsed="true" id="paysages" icon="fas fa-arrow-right">
-            <layer id="abc_boisements" name="Boisements"  visible="true" tiled="false"
-				searchable="false" queryable="true" fields="axe" aliases="axe"   
+            <layer id="abc_boisements" name="Boisements"  visible="false" tiled="false"
+				searchable="false" queryable="true" 
 				infoformat="text/html" featurecount="1"
 				sld="" 
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
@@ -40,8 +42,8 @@
 				metadata=""
 				metadata-csw="" >
 		    </layer>
-            <layer id="abc_haies" name="Linéaires boisés"  visible="true" tiled="false"
-				searchable="false" queryable="true" fields="axe" aliases="axe"   
+            <layer id="abc_haies" name="Linéaires boisés"  visible="false" tiled="false"
+				searchable="false" queryable="true"  
 				infoformat="text/html" featurecount="1"
 				sld="" 
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
@@ -50,8 +52,8 @@
 				metadata=""
 				metadata-csw="" >
 		    </layer>
-            <layer id="abc_cours_eau" name="Cours d'eau"  visible="true" tiled="false"
-				searchable="false" queryable="true" fields="axe" aliases="axe"   
+            <layer id="abc_cours_eau" name="Cours d'eau"  visible="false" tiled="false"
+				searchable="false" queryable="true"
 				infoformat="text/html" featurecount="1"
 				sld="" 
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
@@ -60,8 +62,8 @@
 				metadata=""
 				metadata-csw="" >
 		    </layer>
-            <layer id="abc_etangs" name="Mares et étangs"  visible="true" tiled="false"
-				searchable="false" queryable="true" fields="axe" aliases="axe"   
+            <layer id="abc_etangs" name="Mares et étangs"  visible="false" tiled="false"
+				searchable="false" queryable="true"
 				infoformat="text/html" featurecount="1"
 				sld="" 
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
@@ -70,8 +72,8 @@
 				metadata=""
 				metadata-csw="" >
 		    </layer>
-            <layer id="abc_herbes" name="Milieux herbacés"  visible="true" tiled="false"
-				searchable="false" queryable="true" fields="axe" aliases="axe"   
+            <layer id="abc_herbes" name="Milieux herbacés"  visible="false" tiled="false"
+				searchable="false" queryable="true"
 				infoformat="text/html" featurecount="1"
 				sld="" 
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
@@ -80,7 +82,7 @@
 				metadata=""
 				metadata-csw="" >
 		    </layer>
-            <layer id="abc_urbain" name="Espaces verts urbains"  visible="true" tiled="false"
+            <layer id="abc_urbain" name="Espaces verts urbains"  visible="false" tiled="false"
 				searchable="false" queryable="true"   
 				infoformat="text/html" featurecount="1"
 				sld="" 
@@ -90,9 +92,17 @@
 				metadata=""
 				metadata-csw="" >
 		    </layer>
+			<layer id="zone" name="Zones d'étude" visible="true" queryable="false" 
+				showintoc="false"
+                fields="nom_geo" aliases="Nom" 
+                type="customlayer" style="" opacity="1"  
+                url="apps/obepine/customlayers/zone.js" 
+                tooltip="false" tooltipenabled=""
+                attribution="" 
+                metadata="" 
+                metadata-csw=""/>
         </theme>
         <theme name="Ruptures de Trame Verte et Bleue"  collapsed="true" id="trame_verte_bleue" icon="fas fa-arrow-right">
         </theme>
-
     </themes>
 </config>
