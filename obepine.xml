@@ -23,6 +23,11 @@
     <proxy url=""/>
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la BAN"/>
     <searchparameters bbox="false" localities="true" features="false" />   
+	<styles>
+     <selectionstyle>
+         <polygon fillcolor="229, 85, 80" opacity="0" strokecolor="229, 85, 80" strokewidth="2" />
+     </selectionstyle>
+ 	</styles>
 	<extensions>
 		<extension type="component" id="zoomToArea" path="apps/obepine/addons"/>
 	</extensions>
@@ -34,63 +39,68 @@
         <theme name="Eléments structurants du paysage"  collapsed="true" id="paysages" icon="fas fa-arrow-right">
             <layer id="abc_boisements" name="Boisements"  visible="false" tiled="false"
 				searchable="false" queryable="true" 
-				infoformat="text/html" featurecount="1"
-				sld="" 
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/boisements.sld"
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
 				legendurl="" 
 				attribution="Picardie Nature - Géo2France" 
 				metadata=""
-				metadata-csw="" >
+				metadata-csw="">
+				<template url="apps/obepine/templates/abc_boisements.mst"></template>
 		    </layer>
             <layer id="abc_haies" name="Linéaires boisés"  visible="false" tiled="false"
 				searchable="false" queryable="true"  
-				infoformat="text/html" featurecount="1"
-				sld="" 
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/haies.sld"
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
 				legendurl="" 
 				attribution="Picardie Nature - Géo2France" 
 				metadata=""
-				metadata-csw="" >
+				metadata-csw="">
+				<template url="apps/obepine/templates/abc_lineairesboises.mst"></template>
 		    </layer>
             <layer id="abc_cours_eau" name="Cours d'eau"  visible="false" tiled="false"
 				searchable="false" queryable="true"
-				infoformat="text/html" featurecount="1"
-				sld="" 
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/coursdeau.sld" 
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
 				legendurl="" 
 				attribution="Picardie Nature - Géo2France" 
 				metadata=""
 				metadata-csw="" >
+				<template url="apps/obepine/templates/abc_coursdeau.mst"></template>
 		    </layer>
             <layer id="abc_etangs" name="Mares et étangs"  visible="false" tiled="false"
 				searchable="false" queryable="true"
-				infoformat="text/html" featurecount="1"
-				sld="" 
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/etangs.sld" 
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
 				legendurl="" 
 				attribution="Picardie Nature - Géo2France" 
 				metadata=""
 				metadata-csw="" >
+				<template url="apps/obepine/templates/abc_maresetangs.mst"></template>
 		    </layer>
             <layer id="abc_herbes" name="Milieux herbacés"  visible="false" tiled="false"
 				searchable="false" queryable="true"
-				infoformat="text/html" featurecount="1"
-				sld="" 
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/herbes.sld"
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
 				legendurl="" 
 				attribution="Picardie Nature - Géo2France" 
 				metadata=""
 				metadata-csw="" >
+				<template url="apps/obepine/templates/abc_herbes.mst"></template>
 		    </layer>
             <layer id="abc_urbain" name="Espaces verts urbains"  visible="false" tiled="false"
 				searchable="false" queryable="true"   
-				infoformat="text/html" featurecount="1"
-				sld="" 
+				infoformat="application/vnd.ogc.gml" featurecount="5"
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
 				legendurl="" 
 				attribution="Picardie Nature - Géo2France" 
 				metadata=""
 				metadata-csw="" >
+				<template url="apps/obepine/templates/abc_urbain.mst"></template>
 		    </layer>
 			<layer id="zone" name="Zones d'étude" visible="true" queryable="false" 
 				showintoc="false"

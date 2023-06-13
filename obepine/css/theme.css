@@ -21,6 +21,16 @@
    --myfont: 'Poppins', sans-serif;
 }
 
+/* Modification du right panel */
+
+#right-panel.active {
+   width: 370px!important;
+}
+
+.mv-header h5 {
+   color: #f0ffff00;
+}
+
 
 /* Style modal */
 

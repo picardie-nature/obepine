@@ -1,0 +1,132 @@
+{{#features}}
+	<li id="{{feature_ol_uid}}" class="item" style="width:100%;">	
+        <div id="featureHeader">
+            <div class="labelTheme">éléments structurants du paysages</div>
+            <div class="labelLayer">Espaces verts urbains</div>            
+        </div>
+        <div class="cardBlock" id="featureInfo">
+            <div class="cardBlock-title">
+                <div class="titleIcon"><img src="apps/obepine/img/urbain_icon.svg"alt="Icon boisements"></div>
+                <div class="titleText">Caractéristiques</div>     
+            </div>
+            <div class="cardBlock-body">
+                <div>
+                    <div class="labelField">Type</div>
+                    <div class="valueField">{{type_herbe}}</div>                    
+                </div> 
+                <div>
+                    <div class="labelField">Végétation herbacée</div>
+                    <div class="valueField">{{vegetation_herbacee}}</div>                    
+                </div> 
+                <div>
+                    <div class="labelField">Végétation arborée</div>
+                    <div class="valueField">{{vegetation_arboree}}</div>                    
+                </div>
+                <div>
+                    <div class="labelField">Gestion</div>
+                    <div class="valueField">{{gestion}}</div>                    
+                </div>    
+            </div>                   
+        </div>  
+        <div class="cardBlock" id="featureSpecies">
+            <div class="cardBlock-title">
+                <div class="titleIcon"><img src="apps/obepine/img/species_icon.svg"alt="Icon species"></div>
+                <div class="titleText">Espèces</div>     
+            </div>
+            <div class="cardBlock-body">
+                <div class="numberBlock">
+                    <div class="labelNumberField">Nombre d'espèces observées sur ou à proximité directe * </div>
+                    <div class="valueNumberField">{{nb_sp}}</div>                    
+                </div> 
+                <div class="numberBlock">
+                    <div class="labelNumberField">Nombre d'espèces protégées</div>
+                    <div class="valueNumberField">{{nb_sp_proteges}}</div>                    
+                </div>  
+            </div>
+            <span class="small"><i>* Zone tampon de 10km</i></span>                   
+        </div>  
+	</li>
+
+<style>
+.item {
+    padding: 2rem 0.2rem;
+}
+
+.labelTheme {
+    text-transform: uppercase;
+    color: var(--mycolor);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.labelLayer {
+    color: var(--mycolor);
+    line-height: 1;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.cardBlock {
+    background-color: #efefeeb0;
+    color: #727272;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.titleText {
+    color: var(--mycolor);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cardBlock-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+}
+
+.cardBlock-title .titleIcon img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.cardBlock-body .valueField {
+    font-size: 15px;
+}
+
+.cardBlock-body .labelField {
+    font-weight: 600;
+}
+
+.cardBlock-body>div {
+    border-bottom: 1px solid #727272a8;
+    padding: 1rem 0;
+}
+
+.cardBlock-body>div:last-child {
+    border: none;
+}
+
+.labelNumberField {
+    font-size: 14px;
+    width: 85%;
+}
+
+.numberBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.valueNumberField {
+    font-size: xx-large;
+    color: var(--mycolor);
+}
+
+</style>
+{{/features}}

@@ -185,10 +185,11 @@
                 const selectArea = document.getElementById("zoomAreaSelectorHome");
                 const selectValueArea = selectArea.value;
                 if (selectValueArea != ""){
-                zoomToGeomArea(data, 'code', selectValueArea);
-                $('#help').modal('hide')      
+                    zoomToGeomArea(data, 'code', selectValueArea);
+                    document.getElementById("zoomAreaSelector").value = selectValueArea;
+                    $('#help').modal('hide');      
                 } else{
-                alert("Veuillez sélectionner un territoire dans la liste déroulante.")
+                    alert("Veuillez sélectionner un territoire dans la liste déroulante.")
                 }            
             });   
         })
