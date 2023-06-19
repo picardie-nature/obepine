@@ -5,7 +5,7 @@
     logo="apps/obepine/img/obepine_title.svg" 
     favicon="apps/obepine/img/favicon.png" 
     help="apps/obepine/obepineHome.html" 
-	showhelp="false"
+	showhelp="true"
     measuretools="true" 
     exportpng="true" 
     style="apps/obepine/css/theme.css" 
@@ -33,7 +33,7 @@
 	</extensions>
     <themes>                  
         <theme name="Faune sauvage du territoire"  collapsed="false" id="faune_sauvage" icon="fas fa-arrow-right">  
-			<layer id="biodiv_com_last_20_years" name="Toute faune"  visible="true" tiled="false"
+			<layer id="biodiv_com_last_20_years" name="Toute faune"  visible="true" tiled="true"
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				sld=""
@@ -46,9 +46,20 @@
 		    </layer>           
         </theme> 
         <theme name="Site à enjeux faunistiques"  collapsed="true" id="site_enjeux" icon="fas fa-arrow-right">
+			<layer id="abc_enjeux_faune" name="Site à enjeux faunistiques"  visible="true" tiled="true"
+				searchable="false" queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/sites_enjeux.sld"
+				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
+				legendurl="" 
+				attribution="Picardie Nature - Géo2France" 
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/95707b80-3290-4ff4-b258-d4c10c6943ec"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=95707b80-3290-4ff4-b258-d4c10c6943ec">
+				<template url="apps/obepine/templates/abc_boisements.mst"></template>
+		    </layer> 
         </theme>
         <theme name="Eléments structurants du paysage"  collapsed="true" id="paysages" icon="fas fa-arrow-right">
-            <layer id="abc_boisements" name="Boisements"  visible="false" tiled="false"
+            <layer id="abc_boisements" name="Boisements"  visible="false" tiled="true"
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/boisements.sld"
@@ -59,7 +70,7 @@
 				metadata-csw="https://www.geo2france.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=75879a2c-c11b-46e3-9a67-bdf882d060fc">
 				<template url="apps/obepine/templates/abc_boisements.mst"></template>
 		    </layer>
-            <layer id="abc_haies" name="Linéaires boisés"  visible="false" tiled="false"
+            <layer id="abc_haies" name="Linéaires boisés"  visible="false" tiled="true"
 				searchable="false" queryable="true"  
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/haies.sld"
@@ -70,7 +81,7 @@
 				metadata-csw="https://www.geo2france.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=94470409-bb68-4f5c-922f-5765af08b886">
 				<template url="apps/obepine/templates/abc_lineairesboises.mst"></template>
 		    </layer>
-            <layer id="abc_cours_eau" name="Cours d'eau"  visible="false" tiled="false"
+            <layer id="abc_cours_eau" name="Cours d'eau"  visible="false" tiled="true"
 				searchable="false" queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/coursdeau.sld" 
@@ -81,7 +92,7 @@
 				metadata-csw="https://www.geo2france.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=169738f6-1367-4980-a577-8cb0173a340b" >
 				<template url="apps/obepine/templates/abc_coursdeau.mst"></template>
 		    </layer>
-            <layer id="abc_etangs" name="Mares et étangs"  visible="false" tiled="false"
+            <layer id="abc_etangs" name="Mares et étangs"  visible="false" tiled="true"
 				searchable="false" queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/etangs.sld" 
@@ -92,7 +103,7 @@
 				metadata-csw="https://www.geo2france.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=103f55f1-c6eb-467b-9aca-f6ce368d6912" >
 				<template url="apps/obepine/templates/abc_maresetangs.mst"></template>
 		    </layer>
-            <layer id="abc_herbes" name="Milieux herbacés"  visible="false" tiled="false"
+            <layer id="abc_herbes" name="Milieux herbacés"  visible="false" tiled="true"
 				searchable="false" queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/herbes.sld"
@@ -103,7 +114,7 @@
 				metadata-csw="https://www.geo2france.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c12f2079-0a2f-4bee-9387-9ca9144a8a17" >
 				<template url="apps/obepine/templates/abc_herbes.mst"></template>
 		    </layer>
-            <layer id="abc_urbain" name="Espaces verts urbains"  visible="false" tiled="false"
+            <layer id="abc_urbain" name="Espaces verts urbains"  visible="false" tiled="true"
 				searchable="false" queryable="true"   
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/urbain.sld"
@@ -126,7 +137,7 @@
                 metadata-csw=""/>
         </theme>
         <theme name="Ruptures de Trame Verte et Bleue"  collapsed="true" id="trame_verte_bleue" icon="fas fa-arrow-right">
-			<layer id="trame" name="Ruptures de Trame Verte et Bleue" visible="true" queryable="true" 
+			<layer id="trame" name="Ruptures de Trame Verte et Bleue" visible="false" queryable="true" 
                 type="customlayer" style="" opacity="1"  
                 url="apps/obepine/customlayers/trame.js" 
 				vectorlegend="true"
