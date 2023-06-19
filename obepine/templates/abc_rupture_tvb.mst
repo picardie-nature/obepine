@@ -1,50 +1,38 @@
 {{#features}}
 	<li id="{{feature_ol_uid}}" class="item" style="width:100%;">	
         <div id="featureHeader">
-            <div class="labelTheme">éléments structurants du paysages</div>
-            <div class="labelLayer">Espaces verts urbains</div>            
+            <div class="labelLayer">Ruptures de Trame Verte et Bleue</div>            
         </div>
         <div class="cardBlock" id="featureInfo">
             <div class="cardBlock-title">
-                <div class="titleIcon"><img src="apps/obepine/img/urbain_icon.svg"alt="Icon boisements"></div>
+                <div class="titleIcon"><img src="apps/obepine/img/rupture_icon.svg"alt="Icon boisements"></div>
                 <div class="titleText">Caractéristiques</div>     
             </div>
             <div class="cardBlock-body">
                 <div>
-                    <div class="labelField">Type</div>
-                    <div class="valueField">{{type_urbain}}</div>                    
+                    <div class="labelField">Type de rupture</div>
+                    <div class="valueField">{{type_rupture}}</div>                    
                 </div> 
                 <div>
-                    <div class="labelField">Végétation herbacée</div>
-                    <div class="valueField">{{vegetation_herbacee}}</div>                    
+                    <div class="labelField">Groupes de faune concernés</div>
+                    <div class="valueField">{{group_faune}}</div>                    
                 </div> 
                 <div>
-                    <div class="labelField">Végétation arborée</div>
-                    <div class="valueField">{{vegetation_arboree}}</div>                    
+                    <div class="labelField">Liste des espèces concernées</div>
+                    <div class="valueField">{{list_sp}}</div>                    
                 </div>
                 <div>
-                    <div class="labelField">Gestion</div>
+                    <div class="labelField">Niveau d'impact</div>
+                    <div class="valueField">{{impact}}</div>                    
+                </div>
+                {{#gestion}}
+                <div>
+                    <div class="labelField">Mesure envisageable pour réduire l'impact</div>
                     <div class="valueField">{{gestion}}</div>                    
-                </div>    
-            </div>                   
-        </div>  
-        <div class="cardBlock" id="featureSpecies">
-            <div class="cardBlock-title">
-                <div class="titleIcon"><img src="apps/obepine/img/species_icon.svg"alt="Icon species"></div>
-                <div class="titleText">Espèces *</div>     
-            </div>
-            <div class="cardBlock-body">
-                <div class="numberBlock">
-                    <div class="labelNumberField">Nombre d'espèces observées sur ou à proximité directe</div>
-                    <div class="valueNumberField">{{nb_sp}}</div>                    
                 </div> 
-                <div class="numberBlock">
-                    <div class="labelNumberField">Nombre d'espèces protégées</div>
-                    <div class="valueNumberField">{{nb_sp_proteges}}</div>                    
-                </div>  
-            </div>
-            <span class="small"><i>* incluant une zone tampon de 10m</i></span>                   
-        </div>  
+                {{/gestion}}   
+            </div>                   
+        </div>   
 	</li>
 
 <style>

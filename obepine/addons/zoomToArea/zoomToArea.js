@@ -42,7 +42,7 @@ const zoomToArea = (function() {
       let areaSelected = features.filter(e => e.getProperties()[idArea] == valueAreaSelected);
       let geometry = areaSelected[0].getGeometry().getExtent();     
       // Create buffer
-      let extendBuffer = new ol.extent.buffer(geometry, 1000);
+      let extendBuffer = new ol.extent.buffer(geometry, 4000);
       mviewer.getMap().getView().fit(extendBuffer, {
           duration: 3000
       });

@@ -39,11 +39,11 @@
         <div class="cardBlock" id="featureSpecies">
             <div class="cardBlock-title">
                 <div class="titleIcon"><img src="apps/obepine/img/species_icon.svg"alt="Icon species"></div>
-                <div class="titleText">Espèces</div>     
+                <div class="titleText">Espèces *</div>     
             </div>
             <div class="cardBlock-body">
                 <div class="numberBlock">
-                    <div class="labelNumberField">Nombre d'espèces observées sur ou à proximité directe * </div>
+                    <div class="labelNumberField">Nombre d'espèces observées sur ou à proximité directe</div>
                     <div class="valueNumberField">{{nb_sp}}</div>                    
                 </div> 
                 <div class="numberBlock">
@@ -51,7 +51,7 @@
                     <div class="valueNumberField">{{nb_sp_proteges}}</div>                    
                 </div>  
             </div>
-            <span class="small"><i>* Zone tampon de 10km</i></span>                   
+            <span class="small"><i>* incluant une zone tampon de 10m</i></span>                   
         </div>  
 	</li>
 
