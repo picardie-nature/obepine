@@ -45,17 +45,18 @@
 				<template url="apps/obepine/templates/abc_boisements.mst"></template>
 		    </layer>           
         </theme> 
-        <theme name="Site à enjeux faunistiques"  collapsed="true" id="site_enjeux" icon="fas fa-arrow-right">
-			<layer id="abc_enjeux_faune" name="Site à enjeux faunistiques"  visible="true" tiled="true"
+        <theme name="Sites à enjeux faunistiques"  collapsed="true" id="site_enjeux" icon="fas fa-arrow-right">
+			<layer id="abc_enjeux_faune" name="Sites à enjeux faunistiques"  visible="true" tiled="true"
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/sites_enjeux.sld"
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
+				jsonfields="details_sp_p"
 				legendurl="" 
 				attribution="Picardie Nature - Géo2France" 
 				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/95707b80-3290-4ff4-b258-d4c10c6943ec"
 				metadata-csw="https://www.geo2france.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=95707b80-3290-4ff4-b258-d4c10c6943ec">
-				<template url="apps/obepine/templates/abc_boisements.mst"></template>
+				<template url="apps/obepine/templates/abc_siteEnjeuxFaune.mst"></template>
 		    </layer> 
         </theme>
         <theme name="Eléments structurants du paysage"  collapsed="true" id="paysages" icon="fas fa-arrow-right">

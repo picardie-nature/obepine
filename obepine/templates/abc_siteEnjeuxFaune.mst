@@ -1,0 +1,336 @@
+{{#features}}
+	<li id="{{feature_ol_uid}}" class="item" style="width:100%;">
+            <div id="featureHeader">
+                <div class="labelLayer" style="color:#daac5a;">Sites à enjeux faunistiques</div>            
+            </div>
+            <div class="cardBlock" id="featureInfo">
+                <div class="cardBlock-title">
+                    <div class="titleIcon"><img src="apps/obepine/img/site_icon.svg"alt="Icon site"></div>
+                    <div class="titleText" style="color:#daac5a;">Caractéristiques</div>     
+                </div>
+                <div class="cardBlock-body">
+                    <div>
+                        <div class="labelField">"Habitat dominant (Typologie EUNIS niveau 2)"</div>
+                        <div class="valueField">{{habitat}}</div>                    
+                    </div> 
+                    <div>
+                        <div class="labelField">Etat de conservation du site</div>
+                        <div class="valueField">{{etat_conservation}}</div>                    
+                    </div> 
+                    <div>
+                        <div class="labelField">Gestionnaire</div>
+                        <div class="valueField">{{gestionnaire_en}}</div>                    
+                    </div>
+                    <div>
+                        <div class="labelField">Menace(s)</div>
+                        <div class="valueField">{{menaces}}</div>                    
+                    </div>    
+                </div>                   
+            </div>  
+            <div class="cardBlock" id="featureSpecies">
+                <div class="cardBlock-title">
+                    <div class="titleIcon"><img src="apps/obepine/img/species_icon.svg"alt="Icon species"></div>
+                    <div class="titleText">Espèces *</div>     
+                </div>
+                <div class="cardBlock-body">
+                    <div class="numberBlock">
+                        <div class="labelNumberField">Nombre d'espèces observées sur ou à proximité directe * </div>
+                        <div class="valueNumberField">{{nb_sp}}</div>                    
+                    </div> 
+                    <div class="numberBlock">
+                        <div class="labelNumberField">Nombre d'espèces protégées</div>
+                        <div class="valueNumberField">{{nb_sp_protegees}}</div>                    
+                    </div> 
+                    <div class="numberBlock">
+                        <div class="labelNumberField">Nombre d'espèces patrimoniales</div>
+                        <div class="valueNumberField">{{nb_sp_patrimoniales}}</div>                    
+                    </div> 
+                </div>
+                <div>                
+                    <span class="small"><i>* incluant une zone tampon de 10m</i></span>   
+                </div>    
+                <div class="cardBlock-subTitle">Liste des espèces patrimoniales et/ou protégées</div> 
+                <div class="cardBlock-body">
+                    {{#details_sp_p}}
+                        <div class="jsonFeature">
+                            <div class="flex">
+                                <div>
+                                    <span class="jsonFieldTitle">{{nom_vern}}</span> <br>
+                                    <span class="jsonFieldsubTitle"><i>{{lb_nom}}</i></span>
+                                </div>
+                                <div class="pn pn-{{taxon_gp}}"></div> 
+                            </div>
+                            <div class="jsonFieldText">
+                                <div>Statut de rareté: <span class="specieRar-{{rarete}}"></span></div>
+                                <div>Statut de menace: <span class="specieMen-{{menace}}"></span></div> 
+                            </div>                                                       
+                            <div class="jsonBadge">
+                                <span class="specieProtect-{{protection}}"></span>
+                                <span class="speciePat-{{patrimonialite}}"></span>
+                            </div>                  
+                        </div>
+                    {{/details_sp_p}} 
+                </div>                  
+            </div>    
+                
+	</li>
+
+<style>
+
+
+.item {
+    padding: 2rem 0.2rem;
+}
+
+.labelTheme {
+    text-transform: uppercase;
+    color: var(--mycolor);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.labelLayer {
+    color: var(--mycolor);
+    line-height: 1;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.cardBlock {
+    background-color: #efefeeb0;
+    color: #727272;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.titleText {
+    color: var(--mycolor);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cardBlock-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+}
+
+.cardBlock-title .titleIcon img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.cardBlock-body .valueField {
+    font-size: 15px;
+}
+
+.cardBlock-body .labelField {
+    font-weight: 600;
+}
+
+.cardBlock-body>div {
+    border-bottom: 1px solid #727272a8;
+    padding: 1rem 0;
+}
+
+.cardBlock-body>div:last-child {
+    border: none;
+}
+
+.labelNumberField {
+    font-size: 14px;
+    width: 85%;
+}
+
+.numberBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.valueNumberField {
+    font-size: xx-large;
+    color: var(--mycolor);
+}
+
+/* List of species */
+
+.cardBlock-subTitle {
+    color: var(--mycolor);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 3rem 0 0 0;
+}
+
+.jsonFieldTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #21646f;
+}
+
+.jsonFieldsubTitle {
+    color: #21646f;
+}
+
+.jsonFeature>div {
+    margin-bottom: 5px;
+}
+
+/* Insertion d'un badge si l'espèce est protegée et patrimoniale */
+
+.jsonBadge span::after {    
+    color: white;
+    font-size: 0.9rem;
+    padding: 2px 5px;
+    border-radius: 6px;
+}
+
+.specieProtect-oui::after{
+    content:"Espèce protégee";
+    background-color: #7ab7ad;
+}
+.speciePat-oui::after{
+    content:"Espèce patrimoniale";
+    background-color: #0a6372;
+}
+
+.jsonFeature .flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Insertion des labels - Rareté */
+
+.specieRar-E::after{
+    content:"Exceptionnel"
+}
+
+.specieRar-RR::after{
+    content:"Très rare"
+}
+
+.specieRar-R::after{
+    content:"Rare"
+}
+
+.specieRar-AR::after{
+    content:"Assez rare"
+}
+
+.specieRar-PC::after{
+    content:"Peu commun"
+}
+
+.specieRar-AC::after{
+    content:"Assez commun"
+}
+
+.specieRar-C::after{
+    content:"Commun"
+}
+
+.specieRar-CC::after{
+    content:"Très commun"
+}
+
+.specieRar-NE::after{
+    content:"Non évalué"
+}
+
+/* Insertion des labels - Menace */
+
+.specieMen-RE::after{
+    content:"Régionalement éteint"
+}
+
+.specieMen-CR::after{
+    content:"En danger critique"
+}
+
+.specieMen-NE::after{
+    content:"Non évalué"
+}
+
+.specieMen-EN::after{
+    content:"En danger"
+}
+
+.specieMen-VU::after{
+    content:"Vulnérable"
+}
+
+.specieMen-NT::after{
+    content:"Quasi menacée"
+}
+
+.specieMen-LC::after{
+    content:"Préoccupation mineure"
+}
+
+.specieMen-DD::after{
+    content:"Données insuffisantes"
+}
+
+
+
+
+/* PICTO Picardie Nature pour les taxons */
+
+@font-face {
+    font-family: picnatpicto2020;
+    src: url("apps/obepine/css/PICNATPICTO2020.otf") format("opentype");
+}
+
+.pn {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-size:40px;
+  vertical-align:middle;
+  font-family:"picnatpicto2020";
+  color: #21646f;
+}
+
+.pn-amphibiens_reptiles:before {
+    content: "C";
+}
+.pn-Araignées:before {
+    content: "I";
+}
+
+.pn-Insectes:before {
+  content: "A";
+}
+
+.pn-Oiseaux:before {
+    content: "G";
+}
+
+.pn-Mammifères:before {
+    content: "a";
+}
+
+.pn-Mollusques:before {
+    content: "D";
+}
+
+.pn-Poissons:before {
+  content: "N";
+}
+
+
+
+</style>
+{{/features}}

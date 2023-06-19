@@ -2,12 +2,12 @@
 	<li id="{{feature_ol_uid}}" class="item" style="width:100%;">	
         <div id="featureHeader">
             <div class="labelTheme">éléments structurants du paysages</div>
-            <div class="labelLayer">Linéaires boisés</div>            
+            <div class="labelLayer" style="color:#95af80;">Linéaires boisés</div>            
         </div>
         <div class="cardBlock" id="featureInfo">
             <div class="cardBlock-title">
-                <div class="titleIcon"><img src="apps/obepine/img/boisement_icon.svg"alt="Icon boisements"></div>
-                <div class="titleText">Caractéristiques</div>     
+                <div class="titleIcon"><img src="apps/obepine/img/haie_icon.svg"alt="Icon haie"></div>
+                <div class="titleText" style="color:#95af80;">Caractéristiques</div>     
             </div>
             <div class="cardBlock-body">
                 <div>
