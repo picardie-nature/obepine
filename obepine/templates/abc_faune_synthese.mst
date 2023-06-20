@@ -1,0 +1,270 @@
+{{#features}}
+	<li id="{{feature_ol_uid}}" class="item" style="width:100%;">
+        <div id="fauneSynt">
+            <div id="featureHeader">
+                <div class="labelTheme">Biodiversité faunistique communale</div>
+                <div class="labelLayer">{{area_name}}</div>            
+            </div>
+               
+            <div class="blockNumber allSpecies">
+                <div>
+                    <div class="labelNumber">Toute faune</div>
+                    <div class="valueNumber" id="Toute faune_{{feature_ol_uid}}"></div>
+                    <div class="subLabelNumber">Nombre d'espèces connues depuis les 20 dernières années</div> 
+                </div> 
+                <div class="iconNumber"><img src="apps/obepine/img/species_icon_white.svg"alt="Icon species"></div>
+            </div>
+
+            <div class="cardBlock" id="featureSpecies">
+                <div class="titleCard">Nombres d'espèces connues selon les groupes taxonomiques</div>     
+                <div class="cardBlock-body">
+                    <div class="numberBlock">
+                        <div>
+                            <div class="valueNumber" id="Amphibiens et reptiles_{{feature_ol_uid}}"></div>
+                            <div class="subLabelNumber">Amphibiens et reptiles</div> 
+                        </div> 
+                        <div class="pn pn-amphibiens_reptiles"></div>                    
+                    </div> 
+                    <div class="numberBlock">
+                        <div>
+                            <div class="valueNumber" id="Araignées_{{feature_ol_uid}}"></div>
+                            <div class="subLabelNumber">Araignées</div> 
+                        </div> 
+                        <div class="pn pn-Araignées"></div>                    
+                    </div>
+                    <div class="numberBlock">
+                        <div>
+                            <div class="valueNumber" id="Crustacés_{{feature_ol_uid}}"></div>
+                            <div class="subLabelNumber">Crustacés</div> 
+                        </div> 
+                        <div class="pn "></div>                    
+                    </div>
+                    <div class="numberBlock">
+                        <div>
+                            <div class="valueNumber" id="Insectes_{{feature_ol_uid}}"></div>
+                            <div class="subLabelNumber">Insectes</div> 
+                        </div> 
+                        <div class="pn pn-Insectes"></div>                    
+                    </div>
+                    <div class="numberBlock">
+                        <div>
+                            <div class="valueNumber" id="Mammifères_{{feature_ol_uid}}"></div>
+                            <div class="subLabelNumber">Mammifères</div> 
+                        </div> 
+                        <div class="pn pn-Mammifères"></div>                    
+                    </div>
+                    <div class="numberBlock">
+                        <div>
+                            <div class="valueNumber" id="Mollusques_{{feature_ol_uid}}"></div>
+                            <div class="subLabelNumber">Mollusques</div> 
+                        </div> 
+                        <div class="pn pn-Mollusques"></div>                    
+                    </div>
+                    <div class="numberBlock">
+                        <div>
+                            <div class="valueNumber" id="Oiseaux_{{feature_ol_uid}}"></div>
+                            <div class="subLabelNumber">Oiseaux</div> 
+                        </div> 
+                        <div class="pn pn-Oiseaux"></div>                    
+                    </div>
+                    <div class="numberBlock">
+                        <div>
+                            <div class="valueNumber" id="Poissons_{{feature_ol_uid}}"></div>
+                            <div class="subLabelNumber">Poissons</div> 
+                        </div> 
+                        <div class="pn pn-Poissons"></div>                    
+                    </div>
+                </div>                 
+            </div> 
+            <a class="btn btn_info" href="https://clicnat.fr/territoire/{{area_code}}" target="_blank">En savoir plus</a>
+        </div>      
+	</li>
+
+<style>
+.item {
+    padding: 2rem 0.2rem;
+}
+
+.numberBlock.selectedSpecie{
+    color:var(--mycolor)!important;
+}
+
+.labelTheme {
+    text-transform: uppercase;
+    color: var(--mycolor);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.labelLayer {
+    color: var(--mycolor);
+    line-height: 1;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.blockNumber {
+    background-color: #efefeeb0;
+    color: #727272;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.valueNumber {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.labelNumber {
+    color: var(--mycolor);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.iconNumber img {
+    width: 30px;
+}
+
+.blockNumber.allSpecies {
+    background-color: #8fcbc0;
+    color: white!important;
+    
+}
+
+.blockNumber.allSpecies .labelNumber,.blockNumber.allSpecies .valueNumber {
+    color: white!important;
+}
+
+.btn_info {
+    background-color: var(--mycolor);
+    border: none;
+    padding: 1rem 1.2rem 1rem 2.3rem;
+    color: white;
+    border-radius: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath d='M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z' fill='rgba(255,255,255,1)'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-size: small;
+}
+
+.btn_info:hover {
+    opacity:0.8;
+    color:white;
+}
+
+.cardBlock {
+    background-color: #efefeeb0;
+    color: #727272;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.titleCard {
+    color: var(--mycolor);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.cardBlock-body>div {
+    border-bottom: 1px solid #727272a8;
+    padding: 1rem 0;
+}
+
+.cardBlock-body>div:last-child {
+    border: none;
+}
+
+.labelNumberField {
+    font-size: 14px;
+    width: 85%;
+}
+
+.numberBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* PICTO Picardie Nature pour les taxons */
+
+@font-face {
+    font-family: picnatpicto2020;
+    src: url("apps/obepine/css/PICNATPICTO2020.otf") format("opentype");
+}
+
+.pn {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-size:40px;
+  vertical-align:middle;
+  font-family:"picnatpicto2020";
+  color: inherit;
+}
+
+.pn-amphibiens_reptiles:before {
+    content: "C";
+}
+.pn-Araignées:before {
+    content: "I";
+}
+
+.pn-Insectes:before {
+  content: "A";
+}
+
+.pn-Oiseaux:before {
+    content: "G";
+}
+
+.pn-Mammifères:before {
+    content: "a";
+}
+
+.pn-Mollusques:before {
+    content: "D";
+}
+
+.pn-Poissons:before {
+  content: "N";
+}
+</style>
+<script>
+    // Get data for selected code_area and add nb_sp value for each taxon
+    var dataUrl = "https://www.geo2france.fr/geoserver/picardie_nature/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=biodiv_com_last_20_years&outputFormat=application%2Fjson&CQL_FILTER=area_code={{area_code}}";
+    
+    fetch(dataUrl)
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            // Data success
+            const speciesData = data.features;
+            speciesData.forEach(function(specie) {
+                let prop = specie.properties;
+                let idNumber = document.getElementById(prop.taxon_gp +'_{{feature_ol_uid}}');
+                idNumber.innerHTML += prop.nb_sp;
+            });
+              
+        })
+
+    //Add color to taxon selected in map
+
+    let taxonMapSelector = document.getElementById("biodiv_com_last_20_years-styles-selector");
+    let taxonSelected = taxonMapSelector.options[taxonMapSelector.selectedIndex].text;
+    let blockNumber = document.getElementById(taxonSelected +'_{{feature_ol_uid}}').parentElement;
+    blockNumber.parentElement.classList.add("selectedSpecie");
+</script>
+{{/features}}
