@@ -5,8 +5,12 @@
     <sld:UserStyle>
       <sld:FeatureTypeStyle>
         <sld:Rule>
+          <sld:Name>Classe_335753</sld:Name>
+          <sld:Title>Etat des connaissances</sld:Title>          
+        </sld:Rule>
+        <sld:Rule>
           <sld:Name>Classe_3357</sld:Name>
-          <sld:Title>Aucune</sld:Title>
+          <sld:Title>Nul (0 espèce)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -33,7 +37,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>Classe_3872</sld:Name>
-          <sld:Title>1 - 11</sld:Title>
+          <sld:Title>Faible (1 à 10 espèces)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
@@ -64,7 +68,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>Classe_4919</sld:Name>
-          <sld:Title>11 - 31</sld:Title>
+          <sld:Title>Moyen (11 à 30 espèces)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
@@ -95,7 +99,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>Classe_5510</sld:Name>
-          <sld:Title>31 - 51</sld:Title>
+          <sld:Title>Bon (31 à 50 espèces)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
@@ -126,7 +130,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>Classe_6101</sld:Name>
-          <sld:Title>51 - 101</sld:Title>
+          <sld:Title>Très bon (51 à 100 espèces)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
@@ -157,7 +161,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>Classe_6673</sld:Name>
-          <sld:Title>+101</sld:Title>
+          <sld:Title>Exceptionnel (+101 espèces)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
