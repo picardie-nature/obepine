@@ -472,6 +472,18 @@ ul.nav-pills.nav-stacked {
    line-height: 1.1;
 }
 
+.layerdisplay-subtitle span {
+   font-family: var(--myfont)!important;
+   font-style: normal!important;
+   font-weight: 500;
+}
+
+.layerdisplay-subtitle {
+   background-color: #9e9e9e33;
+   padding: 2px 5px;
+   border-radius: 4px;
+}
+
 /* Supprimer la couche */
 
 a.mv-layer-remove {
@@ -549,11 +561,11 @@ a.mv-layer-remove {
 /* Select */
 
 .mv-layer-options .form-control {
-   border-radius: 10px;
-   border: 1.9px solid #5555557a!important;
-   color: #555!important;
-   font-size: 12px;
-   padding: 6px 10px;
+   border-radius: 5px;
+    border: 1.9px solid #55555533!important;
+    color: #555!important;
+    font-size: 12px;
+    padding: 6px 4px;
 }
 
 .mv-layer-options .form-control:hover {
@@ -812,7 +824,6 @@ span.badge.counter-slide {
 }
 
 #right-panel span.counter-slide {
-   right: 255px!important;
    background-color: var(--mycolor);
 }
 
@@ -842,23 +853,7 @@ span.badge.counter-slide {
 }
 
 
-/* TEMPLATE Chevrons + Badge */
 
-span.badge.counter-slide {
-   font-family: var(--myfont);
-   font-weight: 400!important;
-   letter-spacing: 1px;
-}
-
-#right-panel span.counter-slide {
-   right: 255px!important;
-   background-color: var(--mycolor);
-}
-
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right {
-   font-size: 18px!important;
-}
 
 
 /* PROPRIETES SPECIFIQUES AUX MODES SIMPLIFIE, ULTRA-SIMPLIFIE & MOBILE */

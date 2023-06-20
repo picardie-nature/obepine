@@ -36,17 +36,21 @@
 			<layer id="biodiv_com_last_20_years" name="Toute faune"  visible="true" tiled="true"
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="5"
-				sld=""
+				opacity="0.7"
+				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/abc_biodiv_toutefaune.sld,https://gis.jdev.fr/mviewer/apps/obepine/sld/abc_biodiv_amphibiens.sld,https://gis.jdev.fr/mviewer/apps/obepine/sld/abc_biodiv_araignees.sld,https://gis.jdev.fr/mviewer/apps/obepine/sld/abc_biodiv_crustaces.sld,https://gis.jdev.fr/mviewer/apps/obepine/sld/abc_biodiv_insectes.sld,https://gis.jdev.fr/mviewer/apps/obepine/sld/abc_biodiv_mammiferes.sld,https://gis.jdev.fr/mviewer/apps/obepine/sld/abc_biodiv_mollusques.sld,https://gis.jdev.fr/mviewer/apps/obepine/sld/abc_biodiv_oiseaux.sld,https://gis.jdev.fr/mviewer/apps/obepine/sld/abc_biodiv_poissons.sld"
 				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
 				legendurl="" 
+				expanded="true"
+				styletitle="Groupe taxonomique"
+				stylesalias="Toute faune,Amphibiens et reptiles,Araignées,Crustacés,Insectes,Mammifères,Mollusques,Oiseaux,Poissons"				
 				attribution="Picardie Nature - Géo2France" 
 				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/95707b80-3290-4ff4-b258-d4c10c6943ec"
 				metadata-csw="https://www.geo2france.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=95707b80-3290-4ff4-b258-d4c10c6943ec">
-				<template url="apps/obepine/templates/abc_boisements.mst"></template>
+				<template url=""></template>
 		    </layer>           
         </theme> 
         <theme name="Sites à enjeux faunistiques"  collapsed="true" id="site_enjeux" icon="fas fa-arrow-right">
-			<layer id="abc_enjeux_faune" name="Sites à enjeux faunistiques"  visible="true" tiled="true"
+			<layer id="abc_enjeux_faune" name="Sites à enjeux faunistiques"  visible="false" tiled="true"
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/sites_enjeux.sld"
