@@ -33,7 +33,7 @@
 	</extensions>
     <themes>                  
         <theme name="Faune sauvage du territoire"  collapsed="false" id="faune_sauvage" icon="fas fa-arrow-right">  
-			<layer id="biodiv_com_last_20_years" name="Toute faune"  visible="true" tiled="true"
+			<layer id="biodiv_com_last_20_years" name="Biodiversité faunistique communale"  visible="true" tiled="true"
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				opacity="0.7"

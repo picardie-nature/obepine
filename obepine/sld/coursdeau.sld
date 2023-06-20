@@ -9,7 +9,7 @@
           <sld:Title>Cours d'eau</sld:Title>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#78c8c2</sld:CssParameter>
+              <sld:CssParameter name="fill">#43cada</sld:CssParameter>
               <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>

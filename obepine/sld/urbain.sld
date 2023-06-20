@@ -9,7 +9,7 @@
           <sld:Title>Espaces verts urbains</sld:Title>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#086570</sld:CssParameter>
+              <sld:CssParameter name="fill">#265544</sld:CssParameter>
               <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
