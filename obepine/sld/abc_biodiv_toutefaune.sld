@@ -2,12 +2,15 @@
 <sld:StyledLayerDescriptor xmlns:sld="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <sld:NamedLayer>
     <sld:Name>biodiv_com_last_20_years</sld:Name>
-    <sld:Title>Etat des connaissances</sld:Title>
     <sld:UserStyle>
       <sld:FeatureTypeStyle>
         <sld:Rule>
+          <sld:Name>Classe_335753</sld:Name>
+          <sld:Title>Etat des connaissances</sld:Title>          
+        </sld:Rule>
+        <sld:Rule>
           <sld:Name>Classe_3357</sld:Name>
-          <sld:Title>Aucune</sld:Title>
+          <sld:Title>Nul (0 espèce)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -34,7 +37,7 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>Classe_3872</sld:Name>
-          <sld:Title>1-50</sld:Title>
+          <sld:Title>Faible (1 à 100 espèces)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
@@ -43,7 +46,7 @@
               </ogc:PropertyIsGreaterThanOrEqualTo>
               <ogc:PropertyIsLessThan>
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
-                <ogc:Literal>50</ogc:Literal>
+                <ogc:Literal>101</ogc:Literal>
               </ogc:PropertyIsLessThan>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
@@ -65,16 +68,16 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>Classe_4919</sld:Name>
-          <sld:Title>50 - 100</sld:Title>
+          <sld:Title>Moyen (101 à 200 espèces)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
-                <ogc:Literal>50</ogc:Literal>
+                <ogc:Literal>101</ogc:Literal>
               </ogc:PropertyIsGreaterThanOrEqualTo>
               <ogc:PropertyIsLessThan>
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
-                <ogc:Literal>100</ogc:Literal>
+                <ogc:Literal>201</ogc:Literal>
               </ogc:PropertyIsLessThan>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
@@ -96,16 +99,16 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>Classe_5510</sld:Name>
-          <sld:Title>100 - 500</sld:Title>
+          <sld:Title>Bon (201 à 400 espèces)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
-                <ogc:Literal>100</ogc:Literal>
+                <ogc:Literal>201</ogc:Literal>
               </ogc:PropertyIsGreaterThanOrEqualTo>
               <ogc:PropertyIsLessThan>
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
-                <ogc:Literal>500</ogc:Literal>
+                <ogc:Literal>401</ogc:Literal>
               </ogc:PropertyIsLessThan>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
@@ -127,16 +130,16 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>Classe_6101</sld:Name>
-          <sld:Title>500 - 1 000</sld:Title>
+          <sld:Title>Très bon (401 à 800 espèces)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
-                <ogc:Literal>500</ogc:Literal>
+                <ogc:Literal>401</ogc:Literal>
               </ogc:PropertyIsGreaterThanOrEqualTo>
               <ogc:PropertyIsLessThan>
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
-                <ogc:Literal>1000</ogc:Literal>
+                <ogc:Literal>801</ogc:Literal>
               </ogc:PropertyIsLessThan>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
@@ -158,12 +161,12 @@
         </sld:Rule>
         <sld:Rule>
           <sld:Name>Classe_6673</sld:Name>
-          <sld:Title>+1 000</sld:Title>
+          <sld:Title>Exceptionnel (+801 espèces)</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
-                <ogc:Literal>1000</ogc:Literal>
+                <ogc:Literal>801</ogc:Literal>
               </ogc:PropertyIsGreaterThanOrEqualTo>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
