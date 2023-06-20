@@ -15,7 +15,7 @@
               </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Amphibiens et reptiles</ogc:Literal>
+                <ogc:Literal>*Amphibiens et reptiles*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
@@ -46,7 +46,7 @@
               </ogc:PropertyIsLessThan>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Amphibiens et reptiles</ogc:Literal>
+                <ogc:Literal>*Amphibiens et reptiles*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
@@ -77,7 +77,7 @@
               </ogc:PropertyIsLessThan>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Toute Faune</ogc:Literal>
+                <ogc:Literal>*Amphibiens et reptiles*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
@@ -108,7 +108,7 @@
               </ogc:PropertyIsLessThan>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Amphibiens et reptiles</ogc:Literal>
+                <ogc:Literal>*Amphibiens et reptiles*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
@@ -139,7 +139,7 @@
               </ogc:PropertyIsLessThan>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Amphibiens et reptiles</ogc:Literal>
+                <ogc:Literal>*Amphibiens et reptiles*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
@@ -166,7 +166,7 @@
               </ogc:PropertyIsGreaterThanOrEqualTo>
               <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Amphibiens et reptiles</ogc:Literal>
+                <ogc:Literal>*Amphibiens et reptiles*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
