@@ -13,10 +13,10 @@
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
                 <ogc:Literal>0</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Toute Faune</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+                <ogc:Literal>*Toute Faune*</ogc:Literal>
+              </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
           <sld:PolygonSymbolizer>
@@ -44,10 +44,10 @@
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
                 <ogc:Literal>50</ogc:Literal>
               </ogc:PropertyIsLessThan>
-              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Toute Faune</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+                <ogc:Literal>*Toute Faune*</ogc:Literal>
+              </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
           <sld:PolygonSymbolizer>
@@ -75,10 +75,10 @@
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
                 <ogc:Literal>100</ogc:Literal>
               </ogc:PropertyIsLessThan>
-              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
                 <ogc:Literal>Toute Faune</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
           <sld:PolygonSymbolizer>
@@ -106,10 +106,10 @@
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
                 <ogc:Literal>500</ogc:Literal>
               </ogc:PropertyIsLessThan>
-              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Toute Faune</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+                <ogc:Literal>*Toute Faune*</ogc:Literal>
+              </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
           <sld:PolygonSymbolizer>
@@ -137,10 +137,10 @@
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
                 <ogc:Literal>1000</ogc:Literal>
               </ogc:PropertyIsLessThan>
-              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Toute Faune</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+                <ogc:Literal>*Toute Faune*</ogc:Literal>
+              </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
           <sld:PolygonSymbolizer>
@@ -164,10 +164,10 @@
                 <ogc:PropertyName>nb_sp</ogc:PropertyName>
                 <ogc:Literal>1000</ogc:Literal>
               </ogc:PropertyIsGreaterThanOrEqualTo>
-              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
                 <ogc:PropertyName>taxon_gp</ogc:PropertyName>
-                <ogc:Literal>Toute faune</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+                <ogc:Literal>*Toute faune*</ogc:Literal>
+              </ogc:PropertyIsLike>
             </ogc:And>
           </ogc:Filter>
           <sld:PolygonSymbolizer>
