@@ -9,7 +9,7 @@
           <sld:Title>Herbes</sld:Title>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#cbccb9</sld:CssParameter>
+              <sld:CssParameter name="fill">#b6b7a8</sld:CssParameter>
               <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
