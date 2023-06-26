@@ -9,7 +9,7 @@
             <div class="blockNumber allSpecies">
                 <div>
                     <div class="labelNumber">Toute faune</div>
-                    <div class="valueNumber" id="Toute faune_{{feature_ol_uid}}"></div>
+                    <div class="valueNumber" id="Toute faune{{area_code}}"></div>
                     <div class="subLabelNumber">Nombre d'espèces connues depuis les 20 dernières années</div> 
                 </div> 
                 <div class="iconNumber"><img src="apps/obepine/img/species_icon_white.svg"alt="Icon species"></div>
@@ -20,56 +20,56 @@
                 <div class="cardBlock-body">
                     <div class="numberBlock">
                         <div>
-                            <div class="valueNumber" id="Amphibiens et reptiles_{{feature_ol_uid}}"></div>
+                            <div class="valueNumber" id="Amphibiens et reptiles{{area_code}}"></div>
                             <div class="subLabelNumber">Amphibiens et reptiles</div> 
                         </div> 
                         <div class="pn pn-amphibiens_reptiles"></div>                    
                     </div> 
                     <div class="numberBlock">
                         <div>
-                            <div class="valueNumber" id="Araignées_{{feature_ol_uid}}"></div>
+                            <div class="valueNumber" id="Araignées{{area_code}}"></div>
                             <div class="subLabelNumber">Araignées</div> 
                         </div> 
                         <div class="pn pn-Araignées"></div>                    
                     </div>
                     <div class="numberBlock">
                         <div>
-                            <div class="valueNumber" id="Crustacés_{{feature_ol_uid}}"></div>
+                            <div class="valueNumber" id="Crustacés{{area_code}}"></div>
                             <div class="subLabelNumber">Crustacés</div> 
                         </div> 
                         <div class="pn pn-Crustaces"></div>                    
                     </div>
                     <div class="numberBlock">
                         <div>
-                            <div class="valueNumber" id="Insectes_{{feature_ol_uid}}"></div>
+                            <div class="valueNumber" id="Insectes{{area_code}}"></div>
                             <div class="subLabelNumber">Insectes</div> 
                         </div> 
                         <div class="pn pn-Insectes"></div>                    
                     </div>
                     <div class="numberBlock">
                         <div>
-                            <div class="valueNumber" id="Mammifères_{{feature_ol_uid}}"></div>
+                            <div class="valueNumber" id="Mammifères{{area_code}}"></div>
                             <div class="subLabelNumber">Mammifères</div> 
                         </div> 
                         <div class="pn pn-Mammifères"></div>                    
                     </div>
                     <div class="numberBlock">
                         <div>
-                            <div class="valueNumber" id="Mollusques_{{feature_ol_uid}}"></div>
+                            <div class="valueNumber" id="Mollusques{{area_code}}"></div>
                             <div class="subLabelNumber">Mollusques</div> 
                         </div> 
                         <div class="pn pn-Mollusques"></div>                    
                     </div>
                     <div class="numberBlock">
                         <div>
-                            <div class="valueNumber" id="Oiseaux_{{feature_ol_uid}}"></div>
+                            <div class="valueNumber" id="Oiseaux{{area_code}}"></div>
                             <div class="subLabelNumber">Oiseaux</div> 
                         </div> 
                         <div class="pn pn-Oiseaux"></div>                    
                     </div>
                     <div class="numberBlock">
                         <div>
-                            <div class="valueNumber" id="Poissons_{{feature_ol_uid}}"></div>
+                            <div class="valueNumber" id="Poissons{{area_code}}"></div>
                             <div class="subLabelNumber">Poissons</div> 
                         </div> 
                         <div class="pn pn-Poissons"></div>                    
@@ -269,10 +269,11 @@
         .then((data) => {
             // Data success
             const speciesData = data.features;
+            console.log(speciesData)
             speciesData.forEach(function(specie) {
                 let prop = specie.properties;
-                let idNumber = document.getElementById(prop.taxon_gp +'_{{feature_ol_uid}}');
-                idNumber.innerHTML += prop.nb_sp;
+                let idNumber = document.getElementById(prop.taxon_gp +'{{area_code}}');
+                idNumber.innerHTML = prop.nb_sp;
             });
               
         })

@@ -155,6 +155,17 @@
                 metadata-csw="https://www.geo2france.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=553510a3-71e7-49d4-af6d-2d42e43ccc82">
 				<template url="apps/obepine/templates/abc_rupture_tvb.mst"></template>
 		    </layer>
+			<layer id="abc_rupture_tvb" name="Ruptures de Trame Verte et Bleue"  visible="false" tiled="true"
+				searchable="false" queryable="true"   
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				sld="https://gis.jdev.fr/mviewer/apps/obepine/sld/rupture_TVB.sld"
+				url="https://www.geo2france.fr/geoserver/picardie_nature/ows"
+				legendurl="" 
+				attribution="Picardie Nature - Géo2France" 
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/553510a3-71e7-49d4-af6d-2d42e43ccc82"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=553510a3-71e7-49d4-af6d-2d42e43ccc82" >
+				<template url="apps/obepine/templates/abc_rupture_tvb.mst"></template>
+		    </layer>
         </theme>
     </themes>
 </config>
