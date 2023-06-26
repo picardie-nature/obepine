@@ -39,7 +39,7 @@
                 </div>
                 <div class="cardBlock-body">
                     <div class="numberBlock">
-                        <div class="labelNumberField">Nombre d'espèces observées sur ou à proximité directe * </div>
+                        <div class="labelNumberField">Nombre d'espèces observées sur ou à proximité directe</div>
                         <div class="valueNumberField">{{nb_sp}}</div>                    
                     </div> 
                     <div class="numberBlock">

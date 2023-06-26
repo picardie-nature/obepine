@@ -10,15 +10,18 @@
     exportpng="true" 
     style="apps/obepine/css/theme.css" 
     togglealllayersfromtheme="true"/>
-    <mapoptions 
-    maxzoom="19" projection="EPSG:3857" 
-    center="270969.26527094987, 6319507.75050523" 
-    zoom="12" 
-    projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />  
+    <mapoptions maxzoom="19" projection="EPSG:3857" center="326292,6407945" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244"/>
     <baselayers style="gallery">
         <baselayer  type="OSM" id="positron" label="Positron" title="Carto" thumbgallery="img/basemap/positron.png" 
-            url="http://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
-            visible="true" attribution="Map tiles by  &lt;a href='https://carto.com/attributions' target='_blank'>Carto &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
+        url="http://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+        visible="true" attribution="Map tiles by  &lt;a href='https://carto.com/attributions' target='_blank'>Carto &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
+		<baselayer  type="OSM" id="osm1" label="OpenStreetMap" title="OpenStreetMap" thumbgallery="img/basemap/osm.png" 
+        url="http://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" maxzoom="20" 
+        visible="false" attribution="" />
+		<baselayer type="WMS" id="osm_naturaliste" label="OpenStreetMap - Naturaliste" title="OpenStreetMap - Naturaliste" thumbgallery="img/basemap/osm.png" url="https://osm.geo2france.fr:443/mapcache?SERVICE=WMS" layers="naturaliste" format="image/png" attribution="" visible="false"/>
+		<baselayer type="WMS" id="2021_R32_Ortho_0m20_RVB_COG" label="Orthophoto 2021" title="Orthophoto" thumbgallery="img/basemap/ortho.jpg" url="https://www.geo2france.fr/geoserver/ign/ows" attribution="IGN, Geo2France" layers="2021_R32_Ortho_0m20_RVB_COG" format="image/jpeg" visible="false"/>
+		<baselayer type="WMS" id="scan25" label="IGN Scan25" title="Scan25" thumbgallery="img/basemap/scan.jpg" url="https://www.geo2france.fr/geoserver/geo2france/ows" attribution="IGN, Geo2France" layers="scan25" format="image/jpeg" visible="false"/>
+
     </baselayers>     
     <proxy url=""/>
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la BAN"/>
@@ -33,7 +36,7 @@
 	</extensions>
     <themes>                  
         <theme name="Faune sauvage du territoire"  collapsed="false" id="faune_sauvage" icon="fas fa-arrow-right">  
-			<layer id="biodiv_com_last_20_years" name="Biodiversité faunistique communale"  visible="true" tiled="true"
+			<layer id="biodiv_com_last_20_years" name="État des connaissances de la biodiversité faunistique communale"  visible="true" tiled="true"
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				opacity="0.7"

@@ -7,6 +7,7 @@
     border-right: 7px white solid;
     border-radius: 3px;
     max-width: 250px;
+    background-color: white;
 }
 
 .xs #zoomAreaSelector {

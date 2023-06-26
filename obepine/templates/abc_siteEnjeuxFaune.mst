@@ -10,7 +10,7 @@
                 </div>
                 <div class="cardBlock-body">
                     <div>
-                        <div class="labelField">"Habitat dominant (Typologie EUNIS niveau 2)"</div>
+                        <div class="labelField">Habitat dominant</div>
                         <div class="valueField">{{habitat}}</div>                    
                     </div> 
                     <div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="cardBlock-body">
                     <div class="numberBlock">
-                        <div class="labelNumberField">Nombre d'espèces observées sur ou à proximité directe * </div>
+                        <div class="labelNumberField">Nombre d'espèces observées sur ou à proximité directe</div>
                         <div class="valueNumberField">{{nb_sp}}</div>                    
                     </div> 
                     <div class="numberBlock">
@@ -61,8 +61,8 @@
                                 <div class="pn pn-{{taxon_gp}}"></div> 
                             </div>
                             <div class="jsonFieldText">
-                                <div>Statut de rareté: <span class="specieRar-{{rarete}}"></span></div>
-                                <div>Statut de menace: <span class="specieMen-{{menace}}"></span></div> 
+                                <div>Rareté: <span class="specieRar-{{rarete}}"></span></div>
+                                <div><span class="BadgeSpecieMen-{{menace}}"><i class="fas fa-circle"></i></span> Menace: <span class="specieMen-{{menace}}"></span></div> 
                             </div>                                                       
                             <div class="jsonBadge">
                                 <span class="specieProtect-{{protection}}"></span>
@@ -280,6 +280,40 @@
     content:"Données insuffisantes"
 }
 
+/* Couleur de la pastille pour le statut de menace */
+
+.BadgeSpecieMen-LC i {
+    color: #78b74a;
+}
+
+.BadgeSpecieMen-RE i {
+    color: #5a1a63;
+}
+
+.BadgeSpecieMen-CR i {
+    color: #d3001b;
+}
+
+.BadgeSpecieMen-NE i {
+    color: white;
+}
+
+.BadgeSpecieMen-EN i {
+    color: #fbbf00;
+}
+
+.BadgeSpecieMen-VU i {
+    color: #ffed00;
+}
+
+.BadgeSpecieMen-NT i {
+    color: #fbf2ca;
+}
+
+.BadgeSpecieMen-DD i {
+    color: #d3d4d5;
+}
+
 
 
 
@@ -329,6 +363,15 @@
 
 .pn-Poissons:before {
   content: "N";
+}
+
+.pn-Crustacés:before {
+    display: inline-flex;
+    content: '';
+    background-image: url('apps/obepine/img/crustaces_icon_green.svg');
+    background-size: 38px 38px;
+    height: 38px;
+    width: 38px;
 }
 
 
