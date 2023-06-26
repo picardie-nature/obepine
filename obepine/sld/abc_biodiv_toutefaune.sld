@@ -5,10 +5,6 @@
     <sld:UserStyle>
       <sld:FeatureTypeStyle>
         <sld:Rule>
-          <sld:Name>Classe_335753</sld:Name>
-          <sld:Title>État des connaissances</sld:Title>          
-        </sld:Rule>
-        <sld:Rule>
           <sld:Name>Classe_3357</sld:Name>
           <sld:Title>Nul (0 espèce)</sld:Title>
           <ogc:Filter>
@@ -26,7 +22,7 @@
           <sld:PolygonSymbolizer>
             <sld:Fill>
               <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
-              <sld:CssParameter name="fill-opacity">0.9</sld:CssParameter>
+              <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
@@ -56,7 +52,7 @@
           </ogc:Filter>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#EAF5E3</sld:CssParameter>
+              <sld:CssParameter name="fill">#d6ede9</sld:CssParameter>
               <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
@@ -87,8 +83,8 @@
           </ogc:Filter>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#CCE0BE</sld:CssParameter>
-              <sld:CssParameter name="fill-opacity">0.9</sld:CssParameter>
+              <sld:CssParameter name="fill">#7AC6B9</sld:CssParameter>
+              <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
@@ -118,8 +114,8 @@
           </ogc:Filter>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#7AC6B9</sld:CssParameter>
-              <sld:CssParameter name="fill-opacity">0.9</sld:CssParameter>
+              <sld:CssParameter name="fill">#2C949A</sld:CssParameter>
+              <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
@@ -149,8 +145,8 @@
           </ogc:Filter>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#2C949A</sld:CssParameter>
-              <sld:CssParameter name="fill-opacity">0.9</sld:CssParameter>
+              <sld:CssParameter name="fill">#00586B</sld:CssParameter>
+              <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
@@ -176,8 +172,8 @@
           </ogc:Filter>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#00586B</sld:CssParameter>
-              <sld:CssParameter name="fill-opacity">0.88</sld:CssParameter>
+              <sld:CssParameter name="fill">#17373bff</sld:CssParameter>
+              <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter>
