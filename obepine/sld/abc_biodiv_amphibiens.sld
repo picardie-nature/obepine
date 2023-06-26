@@ -5,10 +5,6 @@
     <sld:UserStyle>
       <sld:FeatureTypeStyle>
         <sld:Rule>
-          <sld:Name>Classe_335753</sld:Name>
-          <sld:Title>État des connaissances</sld:Title>          
-        </sld:Rule>
-        <sld:Rule>
           <sld:Name>Classe_3357</sld:Name>
           <sld:Title>Nul (0 espèce)</sld:Title>
           <ogc:Filter>
