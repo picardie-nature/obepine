@@ -172,7 +172,7 @@
           </ogc:Filter>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#17373b</sld:CssParameter>
+              <sld:CssParameter name="fill">#0b4855</sld:CssParameter>
               <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
