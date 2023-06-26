@@ -9,7 +9,7 @@
           <sld:Title>Haies</sld:Title>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#93b07f</sld:CssParameter>
+              <sld:CssParameter name="fill">#b6b7a8</sld:CssParameter>
               <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>

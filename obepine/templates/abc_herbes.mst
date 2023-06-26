@@ -2,12 +2,12 @@
 	<li id="{{feature_ol_uid}}" class="item" style="width:100%;">	
         <div id="featureHeader">
             <div class="labelTheme">éléments structurants du paysages</div>
-            <div class="labelLayer" style="color:#849379;">Milieux herbacés</div>            
+            <div class="labelLayer" style="color:#b6b7a8;">Milieux herbacés</div>            
         </div>
         <div class="cardBlock" id="featureInfo">
             <div class="cardBlock-title">
                 <div class="titleIcon"><img src="apps/obepine/img/herbes_icon.svg"alt="Icon boisements"></div>
-                <div class="titleText" style="color:#849379;">Caractéristiques</div>     
+                <div class="titleText" style="color:#b6b7a8;">Caractéristiques</div>     
             </div>
             <div class="cardBlock-body">
                 <div>
