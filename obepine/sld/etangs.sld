@@ -9,7 +9,7 @@
           <sld:Title>Etangs</sld:Title>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#699da0</sld:CssParameter>
+              <sld:CssParameter name="fill">#6f9f93</sld:CssParameter>
               <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
