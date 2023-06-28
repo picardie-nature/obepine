@@ -9,7 +9,7 @@
           <sld:Title>Site à enjeux faunistiques</sld:Title>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#E0AA54</sld:CssParameter>
+              <sld:CssParameter name="fill">#834b70</sld:CssParameter>
               <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>

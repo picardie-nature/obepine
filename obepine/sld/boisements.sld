@@ -9,7 +9,7 @@
           <sld:Title>Boisements</sld:Title>
           <sld:PolygonSymbolizer>
             <sld:Fill>
-              <sld:CssParameter name="fill">#C5D7B9</sld:CssParameter>
+              <sld:CssParameter name="fill">#749e93</sld:CssParameter>
               <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
             </sld:Fill>
             <sld:Stroke>
