@@ -346,7 +346,7 @@
   color: #21646f;
 }
 
-.pn-amphibiens_reptiles:before {
+.pn-Amphibiens:before {
     content: "C";
 }
 .pn-Araignées:before {
