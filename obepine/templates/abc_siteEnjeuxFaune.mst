@@ -10,6 +10,10 @@
                 </div>
                 <div class="cardBlock-body">
                     <div>
+                        <div class="labelField">Enjeux)</div>
+                        <div class="valueField">{{enjeux}}</div>                    
+                    </div>  
+                    <div>
                         <div class="labelField">Habitat dominant</div>
                         <div class="valueField">{{habitat}}</div>                    
                     </div> 
@@ -24,7 +28,11 @@
                     <div>
                         <div class="labelField">Menace(s)</div>
                         <div class="valueField">{{menaces}}</div>                    
-                    </div>    
+                    </div>  
+                    <div>
+                        <div class="labelField">Lieu-dit</div>
+                        <div class="valueField">{{nom_lieu}}</div>                    
+                    </div>  
                 </div>                   
             </div>  
             <div class="cardBlock" id="featureSpecies">
