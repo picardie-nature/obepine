@@ -260,7 +260,7 @@
 </style>
 <script>
     // Get data for selected code_area and add nb_sp value for each taxon
-    var dataUrl = "https://www.geo2france.fr/geoserver/picardie_nature/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=biodiv_com_last_20_years&outputFormat=application%2Fjson&CQL_FILTER=area_code={{area_code}}";
+    var dataUrl = "https://www.geo2france.fr/geoserver/picardie_nature/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=biodiv_com_last_20_years&outputFormat=application%2Fjson&CQL_FILTER=area_code='{{area_code}}'";
     
     fetch(dataUrl)
         .then((response) => {
